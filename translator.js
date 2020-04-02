@@ -57,17 +57,17 @@ const charMap = createCharMap();
 charMap.forEach(reverseMap);
 
 
-function translateToScoot(str) {
-	return translate(str, charMap);
+function transToScoot(str) {
+	return trans(str, charMap);
 }
 
-function translateFromScoot(str) {
-	return translate(str, reverseCharMap);
+function transFromScoot(str) {
+	return trans(str, reverseCharMap);
 }
 
 
 // function to translate a string using the map
-function translate(str, map) {
+function trans(str, map) {
 	newStr = "";
 	for (let i = 0; i < str.length; i++) {
 		char curr = str.charAt(i);
@@ -76,3 +76,7 @@ function translate(str, map) {
 
 	return newStr;
 }
+
+
+module.exports.transToScoot = transToScoot;
+module.exports.transFromScoot = transFromScoot;
