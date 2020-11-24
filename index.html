@@ -1,5 +1,38 @@
-<p id="test"> </p>
-<script> 
-	let transTo = require('translator.js'); 
-	document.getElementById("test").innerHTML = transTo('hello world');
-</script>
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="translator.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<span style='font-weight: bold;'>English to Scootish</span>
+		<table style="width:30%">
+		<thead>
+			<tr>
+	  			<th>English</th>
+		  		<th>Scootish</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>
+					<textarea id="inputBox">
+
+					</textarea>
+				</th>
+				<th>
+					<textarea id="outputBox">
+
+					</textarea>
+				</th>
+			</tr>
+		</tbody>
+  		</table>
+
+		<p id="test"> </p>
+		<script> 
+			document.getElementById("test").innerHTML = transFromScoot("[rr[rr[pp[pp");
+		</script>
+
+	</body>
+</html> 

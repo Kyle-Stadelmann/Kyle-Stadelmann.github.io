@@ -1,0 +1,39 @@
+body {
+    background-color: powderblue;
+  }
+
+thead th {
+    background: lightgray;
+    color: #fff;
+    font-weight: initial;
+  }
+
+  tbody th {
+    background: white;
+    color: #fff;
+    font-weight: initial;
+  }
+
+  #inputBox {
+    border: none;
+    height: 120px;
+    width: 100%;
+    padding: 0;
+    font-size: 1.5em;
+    border: none;
+    resize: none;
+    overflow-y: auto;
+    outline: none;
+  }
+
+  #outputBox {
+    border: none;
+    height: 120px;
+    width: 100%;
+    padding: 0;
+    font-size: 1.5em;
+    border: none;
+    resize: none;
+    overflow-y: auto;
+    outline: none;
+  }
